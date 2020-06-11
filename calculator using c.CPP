@@ -3,7 +3,8 @@
 #include<math.h>
 int arith()
 {
- int a,b,c,n;
+ float a,b,c;
+ int n;
  clrscr();
  printf("ARITHMATIC OPERATIONS MENU\n");
  printf("WHAT OPERATION DO YOU WANT TO PERFORM?\n");
@@ -12,30 +13,24 @@ int arith()
  printf("FOR MULTIPLICATION PRESS 3\n");
  printf("FOR DIVISION PRESS 4\n");
  scanf("%d",&n);
+ printf("Enter two numbers\n");
+ scanf("%f%f",&a,&b);
  switch(n){
  case 1:
-      printf("Enter two numbers\n");
-	  scanf("%d%d",&a,&b);
 	  c=a+b;
-	  printf("Addition result is %d\n",c);
+	  printf("Addition result is %.2f\n",c);
 	  break;
  case 2:
-      printf("Enter two numbers\n");
-	  scanf("%d%d",&a,&b);
 	  c=a-b;
-	  printf("Subtraction result is %d\n",c);
+	  printf("Subtraction result is %.2f\n",c);
 	  break;
  case 3:
-      printf("Enter two numbers\n");
-	  scanf("%d%d",&a,&b);
 	  c=a*b;
-	  printf("Multiplication result is %d\n",c);
+	  printf("Multiplication result is %.2f\n",c);
 	  break;
  case 4:
-      printf("Enter two numbers\n");
-	  scanf("%d%d",&a,&b);
 	  c=a/b;
-	  printf("Division result is %d\n",c);
+	  printf("Division result is %.2f\n",c);
 	  break;
  default:
       printf("WRONG INPUT\n");
