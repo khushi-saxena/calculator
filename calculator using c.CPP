@@ -5,7 +5,7 @@ int arith()
 {
  float a,b,c;
  int n;
- clrscr();
+ //clrscr();
  printf("ARITHMATIC OPERATIONS MENU\n");
  printf("WHAT OPERATION DO YOU WANT TO PERFORM?\n");
  printf("FOR ADDITION PRESS 1\n");
@@ -101,6 +101,9 @@ main()
  int n;
  do{printf("FOR DOING ARITHMATIC OPERATIONS PRESS A\n");
  printf("FOR FINDING FACTORIAL PRESS F\n");
+ printf("FOR FINDING KRISHNAMURTHY PRESS K\n");
+ printf("FOR FINDING PALINDROME PRESS P\n");
+ printf("FOR FINDING ARMSTRONG PRESS A\n");
  z=getche();
  switch(z){
  case 'A':
@@ -112,8 +115,23 @@ main()
     printf("\nEnter the number\n");
     scanf("%d",&n);
     fact(n);
+    break;
+ case 'K':
+ case 'k':
+    printf("\nEnter the number\n");
+    scanf("%d",&n);
     krishna(n);
+    break;
+ case 'P':
+ case 'p':
+    printf("\nEnter the number\n");
+    scanf("%d",&n);
     palin(n);
+    break;
+ case 'M':
+ case 'm':
+    printf("\nEnter the number\n");
+    scanf("%d",&n);
     arms(n);
     break;
  default:
