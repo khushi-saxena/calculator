@@ -101,7 +101,7 @@ main()
  int n;
  do{printf("FOR DOING ARITHMATIC OPERATIONS PRESS A\n");
  printf("FOR FINDING FACTORIAL PRESS F\n");
- scanf("%c",&z);
+ z=getche();
  switch(z){
  case 'A':
  case 'a':
@@ -109,7 +109,7 @@ main()
     break;
  case 'F':
  case 'f':
-    printf("Enter the number\n");
+    printf("\nEnter the number\n");
     scanf("%d",&n);
     fact(n);
     krishna(n);
@@ -120,8 +120,8 @@ main()
     printf("You have entered a wrong character \n");
     break;
  }
- printf("Do you want to calculate more??(Y/N) \n");
- scanf("%c",&x);
+ printf("Do you want to calculate more? (Y/N) \n");
+ x=getch();
  }while(x=='Y'||x=='y');
  getch();
 }
