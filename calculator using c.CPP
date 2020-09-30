@@ -95,7 +95,7 @@ int arms(int n){
     printf("%d is not an armstrong number\n",c);
  return 0;
 }
-void main()
+main()
 {
  char z,x;
  int n;
@@ -104,9 +104,11 @@ void main()
  scanf("%c",&z);
  switch(z){
  case 'A':
+ case 'a':
     arith();
     break;
  case 'F':
+ case 'f':
     printf("Enter the number\n");
     scanf("%d",&n);
     fact(n);
